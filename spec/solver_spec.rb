@@ -33,4 +33,22 @@ describe Solver do
         it 'should return esiuol when given louise' do
             expect(solver.reserve('louise')).to eq('esiuol')
         end
+
+        context 'when using fizzbuzz method' do
+            it 'should return fizz when given 3' do
+                expect(solver.fizzbuzz(3)).to eq('fizz')
+            end
+
+            it 'should return buzz when given 5' do
+                expect(solver.fizzbuzz(5)).to eq('buzz')
+            end
+
+            it 'should return fizzbuzz when given 15' do
+                expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+            end
+
+            it 'should return 7 when given 7' do
+                expect(solver.fizzbuzz(7)).to eq('7')
+            end
+        end
 end
