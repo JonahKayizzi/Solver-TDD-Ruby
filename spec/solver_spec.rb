@@ -1,4 +1,3 @@
-require 'spec_helper'
 require_relative '../solver'
 
 describe Solver do
@@ -51,4 +50,5 @@ describe Solver do
                 expect(solver.fizzbuzz(7)).to eq('7')
             end
         end
+    end
 end
