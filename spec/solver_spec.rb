@@ -20,17 +20,17 @@ describe Solver do
         end
     end
 
-    context 'when using reserve method' do
+    context 'when using reverse method' do
         it 'should return olleh when given hello' do
-            expect(solver.reserve('hello')).to eq('olleh')
+            expect(solver.reverse('hello')).to eq('olleh')
         end
 
         it 'should return 12345 when given 54321' do
-            expect(solver.reserve('54321')).to eq('12345')
+            expect(solver.reverse('54321')).to eq('12345')
         end
 
         it 'should return esiuol when given louise' do
-            expect(solver.reserve('louise')).to eq('esiuol')
+            expect(solver.reverse('louise')).to eq('esiuol')
         end
 
         context 'when using fizzbuzz method' do
